@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="500" prefWidth="650"
+            styleClass="bg-play"
+            fx:controller="edu.uoc.uocycle.view.PlayViewController">
+    <Pane fx:id="stationsPane" prefWidth="1024" prefHeight="768"/>
+    <Label fx:id="mouseCoordinatesLabel"/>
+</AnchorPane>

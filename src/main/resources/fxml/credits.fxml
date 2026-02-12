@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefHeight="500" prefWidth="650"
+            styleClass="bg-credits"
+            fx:controller="edu.uoc.uocycle.view.CreditsViewController">
+
+    <VBox layoutX="80" layoutY="170"
+          prefWidth="490"
+          spacing="20"
+          alignment="CENTER"
+          fillWidth="false">
+
+        <VBox alignment="CENTER_LEFT"
+              prefWidth="490"
+              styleClass="uoc-card">
+
+            <HBox alignment="CENTER_LEFT" spacing="8">
+                <Label text="Credits" styleClass="uoc-title"/>
+
+                <Region HBox.hgrow="ALWAYS"/>
+
+                <Label text="Semester" styleClass="uoc-meta-label"/>
+                <Label text="2025-1"  styleClass="uoc-badge"/>
+
+                <VBox.margin>
+                    <Insets bottom="8"/>
+                </VBox.margin>
+            </HBox>
+
+            <Separator styleClass="uoc-separator">
+                <VBox.margin>
+                    <Insets bottom="12"/>
+                </VBox.margin>
+            </Separator>
+
+            <Label wrapText="true"
+                   styleClass="uoc-body"
+                   text="This application was made by DPOO Team with love.">
+                <VBox.margin>
+                    <Insets bottom="6"/>
+                </VBox.margin>
+            </Label>
+
+            <Label wrapText="true"
+                   styleClass="uoc-body-weak"
+                   text="Name Surname1 Surname2 [username@uoc.edu]" />
+        </VBox>
+
+        <StackPane fx:id="backButtonContainer"
+                   styleClass="uoc-btn-primary-container">
+            <Region styleClass="uoc-btn-container-hover" />
+            <Button fx:id="backButton"
+                    text="Back"
+                    onAction="#backMain"
+                    styleClass="uoc-btn-primary"
+                    pickOnBounds="false"/>
+        </StackPane>
+    </VBox>
+</AnchorPane>
